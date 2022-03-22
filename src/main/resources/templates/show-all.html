@@ -1,0 +1,20 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<body>
+<table>
+    <thead>
+    <td>咖啡</td>
+    <td>价格</td>
+    </thead>
+    <tbody>
+    <tr th:each="coffee: ${coffeeList}">
+        <td th:text="${coffee.name}">默认值</td>
+        <td th:text="${coffee.price}">默认值</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+</body>
+
+</html>
